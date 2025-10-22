@@ -2,7 +2,9 @@ name: Deploy Jam gov portal
 
 on:
   push:
-    branches: [ prod ]
+    branches:
+      - prod
+
   workflow_dispatch:
 
 permissions:
@@ -58,5 +60,6 @@ jobs:
     - name: Deploy Jam gov portal
       id: deployment
       uses: actions/deploy-pages@v4
+
 
 
