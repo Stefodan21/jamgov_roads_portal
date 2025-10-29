@@ -44,7 +44,7 @@ jobs:
         VITE_STRIPE_PUBLISHABLE_KEY: ${{ secrets.VITE_STRIPE_PUBLISHABLE_KEY }}
         
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v4
       with:
         path: ./dist
 
@@ -58,5 +58,6 @@ jobs:
     - name: Deploy Jam gov portal
       id: deployment
       uses: actions/deploy-pages@v4
+
 
 
